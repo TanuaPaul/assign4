@@ -6,9 +6,11 @@
   
 ## Problem1
 
-From the sample data given below, remove duplicates on the combination of Name and Age and print results.  
-• Solve this problem by using simple data structures given in scala programming language.
-• Please try to optimize the solution for efficiency in terms of space and time.
+From the sample data given below, remove duplicates on the combination of Name and Age and print results. 
+
+- Solve this problem by using simple data structures given in scala programming language.
+- Please try to optimize the solution for efficiency in terms of space and time.
+
 
 ```
 +--------------------+------+
