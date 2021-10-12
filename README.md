@@ -1,2 +1,0 @@
-# coding-assignment
-coding-assignment
