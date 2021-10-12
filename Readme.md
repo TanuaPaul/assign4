@@ -61,6 +61,7 @@ Traverse to ```com.coding.assignment.problem2``` and open  ```AirlineDataAnalysi
 ## Problem3
 
 Given a time series data which is a clickstream of user activity, task is to enrich the data with session id.
+
 **Session Definition:**
 - Session expires after inactivity of 30 mins, because of inactivity no clickstream record will be generated.
 - Session remains active for a total duration of 2 hours
