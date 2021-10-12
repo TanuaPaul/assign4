@@ -55,7 +55,7 @@ Analyze the above data and find below KPI
 - Get List of airports in US  from which flights are not departed in the month  of  2008 January
   •Output should contain 4 columns  City,State,Country,IATA (i.e airport code)
   
-Traverse to ```com.coding.assignment.problem2``` and open  ```AirlineDataAnalysis.scala``` .Write your code in that file
+Traverse to ```com.coding.assignment.problem2``` and open  ```AirlineDataAnalysis.scala``` .You can write your logic in the same scala object.
 
   
 ## Problem3
