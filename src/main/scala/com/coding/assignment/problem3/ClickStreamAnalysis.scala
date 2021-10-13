@@ -17,5 +17,8 @@ object ClickStreamAnalysis {
     clickStreamDf.show(false)
 
     //ToDo Your code goes here
+
+    sparkSession.close()
+
   }
 }

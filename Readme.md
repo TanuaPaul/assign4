@@ -54,7 +54,7 @@ Analyze the above data and find below KPI
     •FlightDate should be in YYYY-MM-dd format
     •Data should be sorted in ascending order  by flightdate
   
-- Get List of airports in US  from which flights are not departed in the month  of  2008 January
+- Get List of airports in the USA  from which flights are not departed in the month  of  2008 January
   •Output should contain 4 columns  City,State,Country,IATA (i.e airport code)
   
 Traverse to ```com.coding.assignment.problem2``` and open  ```AirlineDataAnalysis.scala``` .You can write your logic in the same scala object.
