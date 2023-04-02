@@ -1,0 +1,14 @@
+df_list = [('Rajesh', 21, 'London'), ('Suresh', 28, 'California'), ('Sam', 26, 'Delhi'), ('Rajesh', 21, 'Gurgaon'),
+           ('Manish', 29, 'Bengaluru'), ('Manish', 33, 'Hydrabad')]
+
+name_age = []
+name_age_location = []
+
+for i in df_list:
+    name_age_tuple = (i[0],i[1])
+    if name_age_tuple not in name_age:
+        name_age.append(name_age_tuple)
+        name_age_location.append(i)
+
+
+print(name_age_location)
