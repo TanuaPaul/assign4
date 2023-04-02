@@ -1,0 +1,40 @@
+#Create DF
+
+columns = ['Name', 'Age', 'Location']
+data = [('Rajesh', 21, 'London'), ('Suresh', 28, 'California'), ('Sam', 26, 'Delhi'), ('Rajesh', 21, 'Gurgaon'), ('Manish', 29, 'Bengaluru'), ('Manish', 33, 'Hydrabad')]
+df = spark.createDataFrame(data).toDF(*columns)
+df.show()
+
+# Finding unique Name-Age combo and keeping the exact df order
+
+name_list = [i[0] for i in df.select("Name").collect()]
+age_list = [i[0] for i in df.select("Age").collect()]
+
+from collections import OrderedDict
+unique_name_age = list(OrderedDict.fromkeys(list_combine))
+
+print(unique_name_age)
+
+#Mapping the Unique Name-Age to location
+
+location_list = [i[0] for i in df.select("Location").collect()]
+name_age_location = [(name_list[i], age_list[i],location_list[i]) for i in range(len(location_list))]
+
+name_age_list = []
+combine_list = []
+
+for i in name_age_location:
+    name_age_tuple = (i[0], i[1])
+    
+    if name_age_tuple in unique_name_age and name_age_tuple not in name_age_list:
+        name_age_list.append(name_age)
+        combine_list.append(i)
+            
+print(combine_list)
+
+#Converting back to DF
+
+new_columns = ['Name', 'Age', 'Location']
+new_df = spark.createDataFrame(combine_list).toDF(*new_columns)
+
+new_df.show()
